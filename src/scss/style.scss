@@ -2,48 +2,37 @@
 @import 'bootstrap-overide.scss';
 @import '_vars.scss';
 @import 'icon-font.scss';
-
-html{
-  height: 100%;
-}
-
-body{
-  font-family: 'Lato', sans-serif;
-  height: 100%;
-}
+@import 'generic.scss';
 
 .wrapper{
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  background-image: url("../img/book-bg.jpg");
-  background-position: center;
+  margin:0 30px;
+}
+
+.bar{
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  height: 30px;
+  background-color: white;
+}
+
+.bar-top{
+  top: 0;
+}
+
+.bar-bottom{
+  bottom: 0;
 }
 
 .header{
+  position: fixed;
+  top: 30px;
+  left: 30px;
+  right: 30px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 30px;
-}
-
-.container{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.container .transparent-button:nth-child(2){
-  border-color: red;
-}
-.main{
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  position: relative;
 }
 
 .header-logo {
@@ -55,53 +44,59 @@ body{
   color:forestgreen;
   align-items: center;
 }
-.transparent-button {
+
+.footer{
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  right: 30px;
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  padding: 30px;
+}
+
+.page{
+  height: 100vh;
+}
+
+// main page
+.main-page{
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  background-image: url("../img/book-bg.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
   align-items: center;
-  height: 60px;
-  color:darkslategrey;
-  border-style: solid;
-  border-width: 2px;
-  margin-left: 30px;
-  padding: 20px;
-  font-family: 'Raleway', sans-serif;
-  font-size: 1.2em;
-}
-.transparent-button:active{
-  background-color: yellow;
 }
 
-.square-button {
-  width: 60px;
+.main{
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
 }
 
-.headertext {
-  display: inline-block;
-}
-
-.pagetitle {
+.page-title {
   display: inline-block;
   border-bottom: 1px solid black;
 }
 
-.h1{
-  font-family: 'Poiret One', cursive;
-  font-size: 2em;
+// page 2
+.page-2{
+  background-color: hotpink;
 }
 
-.h2{
-  font-family: 'Amatic SC', cursive;
-  font-size: 1em;
-}
 
-.h3{
-   font-size: 60px;
-   color: hotpink;
- }
-
-.sidebox{
-  position: fixed;
-  bottom:0px;
-  right:0px
+//page 3
+.page-3{
+  background-color: blueviolet;
 }

@@ -1,0 +1,40 @@
+body{
+  font-family: 'Lato', sans-serif;
+}
+
+.h1{
+  font-family: 'Poiret One', cursive;
+  font-size: 2em;
+}
+
+.h2{
+  font-family: 'Amatic SC', cursive;
+  font-size: 1em;
+}
+
+.h3{
+  font-size: 60px;
+  color: hotpink;
+}
+
+.transparent-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  color:darkslategrey;
+  border-style: solid;
+  border-width: 2px;
+  margin-left: 30px;
+  padding: 20px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.2em;
+
+  &:hover{
+    background-color: yellow;
+  }
+}
+
+.square-button {
+  width: 60px;
+}
