@@ -1,0 +1,70 @@
+@font-face {
+  font-family: 'portfolio';
+  src:    url('../fonts/portfolio.eot?ipy67c');
+  src:    url('../fonts/portfolio.eot?ipy67c#iefix') format('embedded-opentype'),
+  url('../fonts/portfolio.ttf?ipy67c') format('truetype'),
+  url('../fonts/portfolio.woff?ipy67c') format('woff'),
+  url('../fonts/portfolio.svg?ipy67c#portfolio') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="eva-"], [class*=" eva-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'portfolio' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.eva-twitter_s-01:before {
+  content: "\e900";
+}
+.eva-treehouse:before {
+  content: "\e901";
+  font-size: 20px;
+
+}
+.eva-donut_L:before {
+  content: "\e902";
+}
+.eva-facebook_s:before {
+  content: "\e903";
+}
+.eva-linkedin_s:before {
+  content: "\e904";
+}
+.eva-mask_L:before {
+  content: "\e905";
+}
+.eva-paperclip_L:before {
+  content: "\e906";
+}
+.eva-twitter_s:before {
+  content: "\e907";
+}
+.eva-gears:before {
+  content: "\e02b";
+}
+.eva-magnifying-glass:before {
+  content: "\e037";
+}
+.eva-profile-female:before {
+  content: "\e041";
+}
+.eva-bike:before {
+  content: "\e042";
+}
+.eva-twitter:before {
+  content: "\e05e";
+}
+.eva-linkedin:before {
+  content: "\e062";
+}

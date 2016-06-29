@@ -1,45 +1,107 @@
-//----------------------------------*\
-// SCSS MIXINS
-//----------------------------------*/
+@import 'bootstrap/bootstrap-flex.scss';
+@import 'bootstrap-overide.scss';
+@import '_vars.scss';
+@import 'icon-font.scss';
 
-@import 'mixins/_position.scss';
+html{
+  height: 100%;
+}
 
-//----------------------------------*\
-// CONFIG MODULES
-//----------------------------------*/
+body{
+  font-family: 'Lato', sans-serif;
+  height: 100%;
+}
 
-// Config modules
-@import 'modules/_vars.scss';
-@import 'modules/_clearfix.scss';
-@import 'modules/_defaults.scss';
-@import 'modules/_normalize.scss';
-//----------------------------------*\
-// PARTIALS
-//----------------------------------*/
+.wrapper{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  background-image: url("../img/book-bg.jpg");
+  background-position: center;
+}
 
-@import 'partials/_header.scss';
-@import 'partials/_nav.scss';
-@import 'partials/_sidebar.scss';
-@import 'partials/_main.scss';
-@import 'partials/_footer.scss';
+.header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px;
+}
 
-//----------------------------------*\
-// OBJECTS & MODULES
-//----------------------------------*/
+.container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 
-@import 'modules/_buttons.scss';
-@import 'modules/_inputs.scss';
-@import 'modules/_lists.scss';
-@import 'modules/_typography.scss';
-@import 'modules/_misc.scss';
-@import 'modules/_app.scss';
+.container .transparent-button:nth-child(2){
+  border-color: red;
+}
+.main{
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
 
-// Enhancement modules
-@import 'modules/_breakpoints.scss';
-@import 'modules/_print.scss';
+.header-logo {
+  height: 60px;
+}
 
-//----------------------------------*\
-// VENDOR
-//----------------------------------*/
+.header-icons {
+  height: 40px;
+  color:forestgreen;
+  align-items: center;
+}
+.transparent-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  color:darkslategrey;
+  border-style: solid;
+  border-width: 2px;
+  margin-left: 30px;
+  padding: 20px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.2em;
+}
+.transparent-button:active{
+  background-color: yellow;
+}
 
-@import 'vendor/_external.scss';
+.square-button {
+  width: 60px;
+}
+
+.headertext {
+  display: inline-block;
+}
+
+.pagetitle {
+  display: inline-block;
+  border-bottom: 1px solid black;
+}
+
+.h1{
+  font-family: 'Poiret One', cursive;
+  font-size: 2em;
+}
+
+.h2{
+  font-family: 'Amatic SC', cursive;
+  font-size: 1em;
+}
+
+.h3{
+   font-size: 60px;
+   color: hotpink;
+ }
+
+.sidebox{
+  position: fixed;
+  bottom:0px;
+  right:0px
+}
