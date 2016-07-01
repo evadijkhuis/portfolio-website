@@ -3,57 +3,10 @@
 @import '_vars.scss';
 @import 'icon-font.scss';
 @import 'generic.scss';
+@import 'overlay.scss';
 
 .wrapper{
   margin:0 30px;
-}
-
-.bar{
-  position: fixed;
-  width: 100%;
-  z-index: 1;
-  height: 30px;
-  background-color: white;
-}
-
-.bar-top{
-  top: 0;
-}
-
-.bar-bottom{
-  bottom: 0;
-}
-
-.header{
-  position: fixed;
-  top: 30px;
-  left: 30px;
-  right: 30px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 30px;
-}
-
-.header-logo {
-  height: 60px;
-}
-
-.header-icons {
-  height: 40px;
-  color:forestgreen;
-  align-items: center;
-}
-
-.footer{
-  position: fixed;
-  bottom: 30px;
-  left: 30px;
-  right: 30px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding: 30px;
 }
 
 .page{
@@ -64,25 +17,11 @@
 .main-page{
   display: flex;
   flex-direction: column;
-  align-items: stretch;
-  background-image: url("../img/book-bg.jpg");
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/grass-bg.jpg");
   background-position: center;
   background-size: cover;
-}
-
-.container{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.main{
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  position: relative;
 }
 
 .page-title {
@@ -90,13 +29,47 @@
   border-bottom: 1px solid black;
 }
 
-// page 2
-.page-2{
-  background-color: hotpink;
+.content-image {
+  height: 100px;
+  align-items: center;
+  margin: 30px;
 }
 
+// page 2
+.page-2{
+  background-color: $lgreen;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
 
+.coffee-container{
+  width: 20%;
+}
+.coffee-image{
+  height: 40%;
+}
+
+.text-container{
+  width: 35%px;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
 //page 3
 .page-3{
-  background-color: blueviolet;
+  background-color: $dbrown;
+}
+
+//page 4
+.page-4{
+  background-color: $lblue;
+}
+
+//page 5
+.page-5{
+  background-color: white;
 }

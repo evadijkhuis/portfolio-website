@@ -1794,8 +1794,7 @@ a.bg-danger:focus, a.bg-danger:hover {
   content: "\e900"; }
 
 .eva-treehouse:before {
-  content: "\e901";
-  font-size: 20px; }
+  content: "\e901"; }
 
 .eva-donut_L:before {
   content: "\e902"; }
@@ -1834,19 +1833,16 @@ a.bg-danger:focus, a.bg-danger:hover {
   content: "\e062"; }
 
 body {
-  font-family: 'Lato', sans-serif; }
+  font-family: 'Raleway', sans-serif; }
 
 .h1 {
   font-family: 'Poiret One', cursive;
-  font-size: 2em; }
+  font-size: 4em;
+  margin: 60px; }
 
 .h2 {
   font-family: 'Amatic SC', cursive;
-  font-size: 1em; }
-
-.h3 {
-  font-size: 60px;
-  color: hotpink; }
+  font-size: 3em; }
 
 .transparent-button {
   display: -webkit-flex;
@@ -1859,21 +1855,20 @@ body {
       -ms-flex-align: center;
           align-items: center;
   height: 60px;
-  color: darkslategrey;
+  color: white;
   border-style: solid;
   border-width: 2px;
-  margin-left: 30px;
   padding: 20px;
   font-family: 'Raleway', sans-serif;
-  font-size: 1.2em; }
+  font-size: 1.3em;
+  transition: all 0.3s ease-in-out; }
   .transparent-button:hover {
-    background-color: yellow; }
+    background: #fff;
+    /* fallback color for old browsers */
+    background: rgba(255, 255, 255, 0.5); }
 
 .square-button {
   width: 60px; }
-
-.wrapper {
-  margin: 0 30px; }
 
 .bar {
   position: fixed;
@@ -1907,13 +1902,19 @@ body {
 .header-logo {
   height: 60px; }
 
-.header-icons {
-  height: 40px;
-  color: forestgreen;
+.container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-align-items: center;
       -ms-flex-align: center;
-              -ms-grid-row-align: center;
           align-items: center; }
+
+.menu-button {
+  margin-left: 30px; }
 
 .footer {
   position: fixed;
@@ -1926,10 +1927,13 @@ body {
   -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 30px; }
+
+.wrapper {
+  margin: 0 30px; }
 
 .page {
   height: 100vh; }
@@ -1941,28 +1945,52 @@ body {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-align-items: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-  background-image: url("../img/book-bg.jpg");
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("../img/grass-bg.jpg");
   background-position: center;
   background-size: cover; }
 
-.container {
+.page-title {
+  display: inline-block;
+  border-bottom: 1px solid black; }
+
+.content-image {
+  height: 100px;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+              -ms-grid-row-align: center;
+          align-items: center;
+  margin: 30px; }
+
+.page-2 {
+  background-color: #D1DFCC;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center; }
 
-.main {
-  -webkit-flex-grow: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+.coffee-container {
+  width: 20%; }
+
+.coffee-image {
+  height: 40%; }
+
+.text-container {
+  width: 35%px;
+  height: 50%;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -1974,15 +2002,13 @@ body {
           justify-content: space-around;
   -webkit-align-items: center;
       -ms-flex-align: center;
-          align-items: center;
-  position: relative; }
-
-.page-title {
-  display: inline-block;
-  border-bottom: 1px solid black; }
-
-.page-2 {
-  background-color: hotpink; }
+          align-items: center; }
 
 .page-3 {
-  background-color: blueviolet; }
+  background-color: #A5A094; }
+
+.page-4 {
+  background-color: #BDDDE0; }
+
+.page-5 {
+  background-color: white; }

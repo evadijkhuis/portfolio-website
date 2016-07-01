@@ -1,20 +1,16 @@
 body{
-  font-family: 'Lato', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 .h1{
   font-family: 'Poiret One', cursive;
-  font-size: 2em;
+  font-size: 4em;
+  margin: 60px;
 }
 
 .h2{
   font-family: 'Amatic SC', cursive;
-  font-size: 1em;
-}
-
-.h3{
-  font-size: 60px;
-  color: hotpink;
+  font-size: 3em;
 }
 
 .transparent-button {
@@ -22,19 +18,22 @@ body{
   justify-content: center;
   align-items: center;
   height: 60px;
-  color:darkslategrey;
+  color:white;
   border-style: solid;
   border-width: 2px;
-  margin-left: 30px;
   padding: 20px;
   font-family: 'Raleway', sans-serif;
-  font-size: 1.2em;
+  font-size: 1.3em;
+  transition: all 0.3s ease-in-out;
 
   &:hover{
-    background-color: yellow;
+    background: #fff; /* fallback color for old browsers */
+    background: rgba(255, 255, 255, 0.5);
   }
 }
 
 .square-button {
   width: 60px;
 }
+
+
