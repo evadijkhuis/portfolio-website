@@ -44,24 +44,38 @@
   align-items: center;
 }
 
-.coffee-container{
-  width: 20%;
+.image-container{
+  width: 50%;
+  display: flex;
+  flex-flow: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .coffee-image{
-  height: 40%;
+  width: 50%;
 }
 
 .text-container{
-  width: 35%px;
+  width: 50%;
   height: 50%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  text-align: center;
   align-items: center;
 }
 //page 3
 .page-3{
+  background-color: $lgreen;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
   background-color: $dbrown;
+  background-image: url("../img/bg-shape.svg");
+  background-position: bottom;
+  background-size: cover;
 }
 
 //page 4
@@ -69,7 +83,51 @@
   background-color: $lblue;
 }
 
-//page 5
-.page-5{
-  background-color: white;
+//footer-menu
+.footer-menu{
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-column{
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 33.33%;
+//  justify-content:space-around;
+  align-items: center;
+}
+
+.color-1{
+  background-color: $grey1;
+}
+
+.color-2{
+  background-color: $grey2;
+}
+
+.icon-container{
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.footer-text-container{
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+//  justify-content: space-around;
+}
+
+.footer-logo{
+  height: 60px;
+}
+
+.footer-icon{
+  padding: 6px;
+  font-size: 1.2em;
+
 }

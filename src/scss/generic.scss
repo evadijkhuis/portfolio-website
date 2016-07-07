@@ -13,7 +13,7 @@ body{
   font-size: 3em;
 }
 
-.transparent-button {
+.transparent-button{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,7 +23,7 @@ body{
   border-width: 2px;
   padding: 20px;
   font-family: 'Raleway', sans-serif;
-  font-size: 1.3em;
+  font-size: 1.2em;
   transition: all 0.3s ease-in-out;
 
   &:hover{
@@ -32,8 +32,12 @@ body{
   }
 }
 
-.square-button {
+.square-button{
   width: 60px;
 }
 
+.button-icon{
+  padding: 6px;
+  font-size: 1.1em;
+}
 

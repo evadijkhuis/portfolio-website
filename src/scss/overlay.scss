@@ -39,6 +39,32 @@
   margin-left: 30px;
 }
 
+.pagination-container{
+  position: fixed;
+  right: 75px;
+  width:30px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.pagination{
+  width: 100%;
+}
+
+.pager{
+  width: 100%;
+  background-image: linear-gradient(white, white);
+  background-size: 100% 2px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 16px 0;
+  cursor: pointer;
+  &:hover{
+    background-image: linear-gradient(white, white);
+    background-size: 40% 6px;
+  }
+}
+
 .footer{
   position: fixed;
   bottom: 30px;

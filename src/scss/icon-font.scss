@@ -24,29 +24,11 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.eva-twitter_s-01:before {
-  content: "\e900";
+.eva-menu:before {
+  content: "\e5d2";
 }
-.eva-treehouse:before {
-  content: "\e901";
-}
-.eva-donut_L:before {
-  content: "\e902";
-}
-.eva-facebook_s:before {
-  content: "\e903";
-}
-.eva-linkedin_s:before {
-  content: "\e904";
-}
-.eva-mask_L:before {
-  content: "\e905";
-}
-.eva-paperclip_L:before {
-  content: "\e906";
-}
-.eva-twitter_s:before {
-  content: "\e907";
+.eva-mail:before {
+  content: "\e908";
 }
 .eva-gears:before {
   content: "\e02b";
@@ -65,4 +47,28 @@
 }
 .eva-linkedin:before {
   content: "\e062";
+}
+.eva-twitter_s-01:before {
+  content: "\e900";
+}
+.eva-treehouse:before {
+  content: "\e901";
+}
+.eva-donut:before {
+  content: "\e902";
+}
+.eva-facebook:before {
+  content: "\e903";
+}
+.eva-linkedin_s:before {
+  content: "\e904";
+}
+.eva-mask_L:before {
+  content: "\e905";
+}
+.eva-paperclip_L:before {
+  content: "\e906";
+}
+.eva-twitter_s:before {
+  content: "\e907";
 }
