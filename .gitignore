@@ -40,3 +40,5 @@ Desktop.ini
 $RECYCLE.BIN/
 
 .idea/
+app/assets/css
+app/assets/js
