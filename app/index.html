@@ -16,39 +16,42 @@
 </head>
 <body>
 <div class="wrapper">
-  <div class="bar bar-top"></div>
-  <div class="bar bar-bottom"></div>
-  <div class="header">
-    <div class="transparent-button square-button">
-      <i class="eva-paperclip_L button-icon"></i>
-    </div>
-    <div class="container">
-      <div class="transparent-button">
-        SOMETHING ELSE
+  <div class="overlay-container">
+    <div class="bar bar-top"></div>
+    <div class="bar bar-bottom"></div>
+    <div class="header">
+      <div class="transparent-button square-button">
+        <i class="eva-paperclip_L button-icon"></i>
       </div>
-      <div class="transparent-button square-button menu-button">
-        <i class="eva-menu button-icon"></i>
+      <div class="container">
+        <div class="transparent-button">
+          SOMETHING ELSE
+        </div>
+        <div class="transparent-button square-button menu-button">
+          <i class="eva-menu button-icon"></i>
+        </div>
+      </div>
+    </div>
+    <div class="pagination-container">
+      <div class="pagination">
+        <div class="pager"></div>
+        <div class="pager"></div>
+        <div class="pager"></div>
+        <div class="pager"></div>
+        <div class="pager"></div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="transparent-button square-button">
+        <i class="eva-magnifying-glass button-icon"></i>
+      </div>
+      <div class="transparent-button square-button">
+        <i class="eva-bike button-icon"></i>
       </div>
     </div>
   </div>
-  <div class="pagination-container">
-    <div class="pagination">
-      <div class="pager"></div>
-      <div class="pager"></div>
-      <div class="pager"></div>
-      <div class="pager"></div>
-      <div class="pager"></div>
-    </div>
-  </div>
-  <div class="footer">
-    <div class="transparent-button square-button">
-      <i class="eva-magnifying-glass button-icon"></i>
-    </div>
-    <div class="transparent-button square-button">
-      <i class="eva-bike button-icon"></i>
-    </div>
-  </div>
-  <div class="page main-page">
+  <div class="white-overlay"></div>
+  <div class="page main-page active">
     <div class="h1 page-title">ux design & co-creation</div>
     <div>
       <img class="content-image" src="assets/img/peanuts-logo.png" alt="">
@@ -84,8 +87,7 @@
       <i class="eva-linkedin_s"></i>
     </div>
   </div>
-  <div class="page page-4">
-  </div>
+  <div class="page page-4"></div>
   <div class="page footer-menu">
     <div class="footer-column color-1">
       <div class="icon-container">
@@ -124,7 +126,10 @@
     </div>
   </div>
 </div>
+
 <script src="assets/components/jquery/jquery.min.js"></script>
+<script src="assets/components/lodash.js"></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.13.1/lodash.min.js"></script>-->
 <script src="assets/js/scripts.js"></script>
 </body>
 </html>

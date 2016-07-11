@@ -5,12 +5,82 @@
 @import 'generic.scss';
 @import 'overlay.scss';
 
+html, body{
+  height: 100%;
+  overflow: hidden;
+}
+
 .wrapper{
-  margin:0 30px;
+  height: 100%;
+}
+
+.white-overlay{
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transition: transform 0.5s;
+  transition-timing-function: cubic-bezier(.59,.04,.33,.94);
+  transform: scaleY(0);
+  transform-origin: bottom;
+  z-index: 30;
+  background-color: white;
+
+  &.slide-in{
+    transform: scaleY(1);
+  }
+
+  &.slide-out{
+    transform-origin: top;
+    transform: scaleY(0);
+  }
+
+  &.page-up{
+    transform-origin: top;
+
+    &.slide-out{
+      transform-origin: bottom;
+    }
+  }
 }
 
 .page{
   height: 100vh;
+  margin:0 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
+  transition-timing-function: cubic-bezier(.59,.04,.33,.94);
+
+  &.active{
+    z-index: 1;
+  }
+
+  &.slide-out{
+    transition: transform 0.5s;
+    //top: -100px;
+    transform: translateY(-100px);
+  }
+
+  &.slide-in{
+    transition: transform 0.5s;
+    top: 100px;
+    transform: translateY(-100px);
+  }
+
+  &.page-up{
+    &.slide-out{
+      transform: translateY(100px);
+    }
+
+    &.slide-in{
+      top: -100px;
+      transform: translateY(100px);
+    }
+  }
 }
 
 // main page

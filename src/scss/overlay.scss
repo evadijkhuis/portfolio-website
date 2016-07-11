@@ -1,3 +1,8 @@
+.overlay-container{
+  position: fixed;
+  z-index: 20;
+}
+
 .bar{
   position: fixed;
   width: 100%;
@@ -59,8 +64,8 @@
   background-position: center center;
   padding: 16px 0;
   cursor: pointer;
+
   &:hover{
-    background-image: linear-gradient(white, white);
     background-size: 40% 6px;
   }
 }
